@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../Style/main.css">
+    <link rel="stylesheet" href="../Style/footer.css">
+    <link rel="stylesheet" href="../Style/menu.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div style="background-color: bisque;">
+
+        <button class="burger" onclick="toggleMenu()"></button>
+        <div class="menu">
+            <nav>
+                <img class="logoMenu" src="../Imagenes/logonuevo2.png" style="width: 200px;" alt="">
+                <a href="#" style="animation-delay: 0.2s">About</a>
+                <a href="#" style="animation-delay: 0.3s">Portfolio</a>
+                <a href="#" style="animation-delay: 0.4s">Services</a>
+                <a href="#" style="animation-delay: 0.5s">Contact</a>
+            </nav>
+        </div>
+        <div class="contenedorCentro" style="background-color: bisque;">
+
+            <div class="slide">
+                <img class="imgSlide" src="../Imagenes/papa01.jpg" alt="">
+                <img class="imgSlide" src="../Imagenes/papa02.jpg" alt="">
+                <img class="imgSlide" src="../Imagenes/papa03.jpg" alt="">
+                <img class="imgSlide" src="../Imagenes/papa04.jpg" alt="">
+
+            </div>
+        </div>
+        <footer style="background-color: #000000;">
+            <div class="content">
+
+                <div class="left box">
+
+                    <div class="topic">Escuela K-9 | BVR</div>
+
+                    <p>Para ser el mejor, <br>tenés que estudiar con los mejores.</p>
+
+                    <div class="lower">
+                        <div class="topic">Urgencias</div>
+                        <a href="#"><i class="fas fa-phone-volume"></i>(011) 4 302-2222</a>
+
+                        <div class="topic">Escuela K-9</div>
+                        <a href="#"><i class="fas fa-phone-volume"></i>(011) 15 6321-5569</a>
+
+                    </div>
+                </div>
+                <div class="middle box">
+                    <div><a href="#">Nosotros</a></div>
+                    <div><a href="#">Cursos</a></div>
+                    <div><a href="#">Capacitaciones</a></div>
+                    <div><a href="#">Clases particulares</a></div>
+                    <div><a href="#">Galería de imágenes</a></div>
+                    <img class="logoFooter2" src="../Imagenes/logonuevo2.png"
+                        style="width: 200px; background-color: #000000;" alt="">
+                </div>
+                <div class="right box">
+                    <div class="topic">Contactate con nosotros</div>
+                    <form action="#">
+                        <input type="text" placeholder="Ingresá tú correo electrónico" style="background: #fff">
+                        <input type="submit" name="" value="Enviar">
+                        <div class="media-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="bottom">
+                    <p>©Copyright 2018 - EscuelaK9bvr® | Todos los Derechos Reservados </p>
+                </div>
+        </footer>
+    </div>
+    
+    <script type="text/javascript">
+        const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+
+</body>
+
+</html>
