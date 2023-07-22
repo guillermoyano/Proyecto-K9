@@ -3,11 +3,11 @@
     margin: 0;
 }
 
-.contenedorNosotros {
+.contenedorCentro{
     display: flex;
     justify-content: center;
-    margin: 45px;
-  }
+    min-height: 600px;
+}
 
 .slide{
     display: flex;
@@ -21,11 +21,10 @@
 .slide .imgSlide{
     width: 400px;
     height: 300px;
-    border: 2px solid #ff3d0036;
+    border: 2px solid #000000;
     border-radius: 13px;
-    box-shadow: 4px 7p 7px 0px #00000042;
-    cursor: 
-    margin 10px;
+    box-shadow: 4px 7p 7px 0px #000000;
+    margin: 10px;
     transition: 400ms;
 }
 .slide .imgSlide:hover{
