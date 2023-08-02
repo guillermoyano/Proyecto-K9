@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Style/main.css">
     <link rel="stylesheet" href="../Style/footer.css">
     <link rel="stylesheet" href="../Style/menu.css">
@@ -17,7 +16,7 @@
 </head>
 
 <body>
-    <div style="background-color: bisque;">
+    <div>
 
         <button class="burger" onclick="toggleMenu()"></button>
         <div class="menu">
@@ -29,21 +28,100 @@
                 <a href="#" style="animation-delay: 0.5s">Contact</a>
             </nav>
         </div>
-        <div class="contenedorCentro" style="background-color: bisque;">
+        <div class="contenedorCentro" style="background-color: #353333;;">
 
-            <div class="slide">
+            <!-- <div class="slide">
                 <img class="imgSlide" src="../Imagenes/papa01.jpg" alt="">
                 <img class="imgSlide" src="../Imagenes/papa02.jpg" alt="">
                 <img class="imgSlide" src="../Imagenes/papa03.jpg" alt="">
                 <img class="imgSlide" src="../Imagenes/papa04.jpg" alt="">
 
-            </div>
+            </div> -->
+
+            <ul class="slides">
+                <input type="radio" name="radio-btn" id="img-1" checked />
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="../Imagenes/Screenshot_3.jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-6" class="prev">&#x2039;</label>
+                        <label for="img-2" class="next">&#x203a;</label>
+                    </div>
+                </li>
+
+                <input type="radio" name="radio-btn" id="img-2" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="../Imagenes/Screenshot_1.jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-1" class="prev">&#x2039;</label>
+                        <label for="img-3" class="next">&#x203a;</label>
+                    </div>
+                </li>
+
+                <input type="radio" name="radio-btn" id="img-3" />
+                <li class="slide-container">
+                    <div class="slide">
+
+                        <img src="../Imagenes/Screenshot_2.jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-2" class="prev">&#x2039;</label>
+                        <label for="img-4" class="next">&#x203a;</label>
+                    </div>
+                </li>
+
+                <input type="radio" name="radio-btn" id="img-4" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="../Imagenes/Screenshot_4.jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-3" class="prev">&#x2039;</label>
+                        <label for="img-5" class="next">&#x203a;</label>
+                    </div>
+                </li>
+
+                <input type="radio" name="radio-btn" id="img-5" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="../Imagenes/Screenshot_5.jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-4" class="prev">&#x2039;</label>
+                        <label for="img-6" class="next">&#x203a;</label>
+                    </div>
+                </li>
+
+                <!-- <input type="radio" name="radio-btn" id="img-6" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <img
+                            src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?cs=srgb&dl=pexels-george-desipris-792381.jpg&fm=jpg" />
+                    </div>
+                    <div class="nav">
+                        <label for="img-5" class="prev">&#x2039;</label>
+                        <label for="img-1" class="next">&#x203a;</label>
+                    </div>
+                </li> -->
+
+                <li class="nav-dots">
+                    <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                    <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                    <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                    <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                    <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+                    <!-- <label for="img-6" class="nav-dot" id="img-dot-6"></label> -->
+                </li>
+            </ul>
         </div>
         <footer style="background-color: #000000;">
             <div class="content">
                 <div class="left box">
                     <div class="topic">Escuela K-9 | BVR</div>
-                    <p>Para ser el mejor, <br>tenés que estudiar con los mejores.</p>
+                    <p class="mejores" style="text-align: left;">Para ser el mejor, <br>tenés que estudiar con los mejores.</p>
 
                     <div class="lower">
                         <div class="topic">Urgencias</div>
@@ -82,10 +160,12 @@
                 </div>
         </footer>
     </div>
-    
+
     <script type="text/javascript">
         const toggleMenu = () => document.body.classList.toggle("open");
     </script>
+    <script src='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js'></script>
+    <script src="../JavaScript/paralax.js"></script>
 
 </body>
 
