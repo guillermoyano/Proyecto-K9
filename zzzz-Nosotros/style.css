@@ -61,7 +61,8 @@ body {
 }
 
 .conteudo-geral.caixa--componente-ativo .componente-fundo-imagem {
-  width: calc(100vw - 140px);
+  width: calc(100vw - 200px);
+  height: calc(60vh + 500px);
 }
 
 .componente-fundo-imagem:before {
@@ -83,7 +84,7 @@ body {
 .componente.caixa-conteudo-ativo .componente-fundo-imagem:before {
   transition: transform 0.8s;
 }
-.componente-fundo-imagem:after {
+/* .componente-fundo-imagem:after {
   content: "";
   z-index: 1;
   position: absolute;
@@ -98,7 +99,7 @@ body {
 .conteudo-geral.caixa--componente-ativo .componente-fundo-imagem:after {
   transition: opacity 0.5s 1.4s;
   opacity: 1 !important;
-}
+} */
 .componente-visual-inicial {
   z-index: 2;
   display: flex;
@@ -284,7 +285,7 @@ body {
   transform: translate3d(105.2083333333%, 0, 0);
   transform-origin: 155.2083333333% 50%;
 }
-.subr{
+.subr {
   text-decoration: none;
 }
 .conteudo-geral.caixa--componente-ativo

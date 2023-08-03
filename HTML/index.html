@@ -28,7 +28,7 @@
                 <a href="#" style="animation-delay: 0.5s">Contact</a>
             </nav>
         </div>
-        <div class="contenedorCentro" style="background-color: #353333;;">
+        <div class="contenedorCentro" style="background-color: #353333;">
 
             <!-- <div class="slide">
                 <img class="imgSlide" src="../Imagenes/papa01.jpg" alt="">
@@ -38,90 +38,38 @@
 
             </div> -->
 
-            <ul class="slides">
-                <input type="radio" name="radio-btn" id="img-1" checked />
-                <li class="slide-container">
-                    <div class="slide">
-                        <img src="../Imagenes/Screenshot_3.jpg" />
-                    </div>
-                    <div class="nav">
-                        <label for="img-6" class="prev">&#x2039;</label>
-                        <label for="img-2" class="next">&#x203a;</label>
-                    </div>
-                </li>
+            <div class="container">
 
-                <input type="radio" name="radio-btn" id="img-2" />
-                <li class="slide-container">
-                    <div class="slide">
-                        <img src="../Imagenes/Screenshot_1.jpg" />
+                <!-- BUTTONS (input/labels) -->
+                <input type="radio" name="slider" id="slide-1-trigger" class="trigger" checked>
+                <label class="btn" for="slide-1-trigger"></label>
+                <input type="radio" name="slider" id="slide-2-trigger" class="trigger">
+                <label class="btn" for="slide-2-trigger"></label>
+                <input type="radio" name="slider" id="slide-3-trigger" class="trigger">
+                <label class="btn" for="slide-3-trigger"></label>
+                <input type="radio" name="slider" id="slide-4-trigger" class="trigger">
+                <label class="btn" for="slide-4-trigger"></label>
+        
+                <!-- SLIDES -->
+                <div class="slide-wrapper">
+                    <div id="slide-role">
+                        <div class="slide slide-1"></div>
+                        <div class="slide slide-2"></div>
+                        <div class="slide slide-3"></div>
+                        <div class="slide slide-4"></div>
                     </div>
-                    <div class="nav">
-                        <label for="img-1" class="prev">&#x2039;</label>
-                        <label for="img-3" class="next">&#x203a;</label>
-                    </div>
-                </li>
+                </div>
+        
+            </div>
 
-                <input type="radio" name="radio-btn" id="img-3" />
-                <li class="slide-container">
-                    <div class="slide">
 
-                        <img src="../Imagenes/Screenshot_2.jpg" />
-                    </div>
-                    <div class="nav">
-                        <label for="img-2" class="prev">&#x2039;</label>
-                        <label for="img-4" class="next">&#x203a;</label>
-                    </div>
-                </li>
-
-                <input type="radio" name="radio-btn" id="img-4" />
-                <li class="slide-container">
-                    <div class="slide">
-                        <img src="../Imagenes/Screenshot_4.jpg" />
-                    </div>
-                    <div class="nav">
-                        <label for="img-3" class="prev">&#x2039;</label>
-                        <label for="img-5" class="next">&#x203a;</label>
-                    </div>
-                </li>
-
-                <input type="radio" name="radio-btn" id="img-5" />
-                <li class="slide-container">
-                    <div class="slide">
-                        <img src="../Imagenes/Screenshot_5.jpg" />
-                    </div>
-                    <div class="nav">
-                        <label for="img-4" class="prev">&#x2039;</label>
-                        <label for="img-6" class="next">&#x203a;</label>
-                    </div>
-                </li>
-
-                <!-- <input type="radio" name="radio-btn" id="img-6" />
-                <li class="slide-container">
-                    <div class="slide">
-                        <img
-                            src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?cs=srgb&dl=pexels-george-desipris-792381.jpg&fm=jpg" />
-                    </div>
-                    <div class="nav">
-                        <label for="img-5" class="prev">&#x2039;</label>
-                        <label for="img-1" class="next">&#x203a;</label>
-                    </div>
-                </li> -->
-
-                <li class="nav-dots">
-                    <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-                    <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-                    <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-                    <label for="img-4" class="nav-dot" id="img-dot-4"></label>
-                    <label for="img-5" class="nav-dot" id="img-dot-5"></label>
-                    <!-- <label for="img-6" class="nav-dot" id="img-dot-6"></label> -->
-                </li>
-            </ul>
         </div>
         <footer style="background-color: #000000;">
             <div class="content">
                 <div class="left box">
                     <div class="topic">Escuela K-9 | BVR</div>
-                    <p class="mejores" style="text-align: left;">Para ser el mejor, <br>tenés que estudiar con los mejores.</p>
+                    <p class="mejores" style="text-align: left;">Para ser el mejor, <br>tenés que estudiar con los
+                        mejores.</p>
 
                     <div class="lower">
                         <div class="topic">Urgencias</div>
@@ -164,8 +112,7 @@
     <script type="text/javascript">
         const toggleMenu = () => document.body.classList.toggle("open");
     </script>
-    <script src='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js'></script>
-    <script src="../JavaScript/paralax.js"></script>
+    <!-- <script src="../JavaScript/paralax.js"></script> -->
 
 </body>
 
