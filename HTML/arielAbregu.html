@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Style/main.css">
+    <link rel="stylesheet" href="../Style/footer.css">
+    <link rel="stylesheet" href="../Style/menu.css">
+    <link rel="stylesheet" href="../Style/profile.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div>
+
+        <button class="burger" onclick="toggleMenu()"></button>
+        <div class="menu">
+            <nav>
+                <img class="logoMenu" src="../Imagenes/logonuevo2.png" style="width: 200px;" alt="">
+                <a href="#" style="animation-delay: 0.2s">About</a>
+                <a href="#" style="animation-delay: 0.3s">Portfolio</a>
+                <a href="#" style="animation-delay: 0.4s">Services</a>
+                <a href="#" style="animation-delay: 0.5s">Contact</a>
+            </nav>
+        </div>
+        <div class="contenedorCentro" style="background-color: #353333;">
+
+            <div class="container">
+                <div class="container-inner">
+                    <div class="main-content">
+                        <div class="main-headings" id="main-headings-js">
+                            <p id="by-line">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                            <div class="heading">
+                                <h3 id="heading1">Decouvrez</h3>
+                                <h3 id="heading2">la Jeune,</h3>
+                                <h1 id="heading3">Beaute</h1>
+                            </div>
+
+                            <div class="short-bio">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, repellat, quod sed
+                                    optio nesciunt aspernatur inventore ab, nostrum accusantium harum dolor voluptate
+                                    nulla!</p>
+
+                            </div>
+
+                            <a href="#" class="link" onclick="readMore()">Read More</a>
+                        </div>
+
+                        <div class="more-info " id="more-info-js">
+
+                            <h4>Lorem ipsum dolor sit.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse expedita impedit iste,
+                                quibusdam debitis fugit repudiandae voluptatum vero quod nulla!</p>
+
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus iusto facere
+                                dignissimos quaerat facilis voluptatibus fuga quod impedit. Atque tenetur amet officia
+                                repudiandae odit.</p>
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni saepe suscipit deleniti
+                                porro fugit! Atque nisi alias a porro fugiat incidunt exercitationem! Nihil,
+                                consectetur. Expedita.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="image-wrapper">
+                        <div class="image-container">
+                            <img class="image"
+                                src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=755bbb2b0afd5808494a8723774cd141"
+                                alt="image of a young woman.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <footer style="background-color: #000000;">
+            <div class="content">
+                <div class="left box">
+                    <div class="topic">Escuela K-9 | BVR</div>
+                    <p class="mejores" style="text-align: left;">Para ser el mejor, <br>tenés que estudiar con los
+                        mejores.</p>
+
+                    <div class="lower">
+                        <div class="topic">Urgencias</div>
+                        <a class="linkFooter" href="#"><i class="fas fa-phone-volume"></i>(011) 4 302-2222</a>
+
+                        <div class="topic">Escuela K-9</div>
+                        <a class="linkFooter" href="#"><i class="fas fa-phone-volume"></i>(011) 15 6321-5569</a>
+
+                    </div>
+                </div>
+                <div class="middle box">
+                    <div><a class="linkFooter" href="#">Nosotros</a></div>
+                    <div><a class="linkFooter" href="#">Cursos</a></div>
+                    <div><a class="linkFooter" href="#">Capacitaciones</a></div>
+                    <div><a class="linkFooter" href="#">Clases particulares</a></div>
+                    <div><a class="linkFooter" href="#">Galería de imágenes</a></div>
+                    <img class="logoFooter" src="../Imagenes/logonuevo2.png"
+                        style="width: 200px; background-color: #000000;" alt="">
+                </div>
+                <div class="right box">
+                    <div class="topic">Contactate con nosotros</div>
+                    <form action="#">
+                        <input type="text" placeholder="Ingresá tú correo electrónico" style="background: #fff">
+                        <input type="submit" name="" value="Enviar">
+                        <div class="media-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="bottom">
+                    <p>©Copyright 2018 - EscuelaK9bvr® | Todos los Derechos Reservados </p>
+                </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+    <script src="../JavaScript/profile.js"></script>
+
+</body>
+
+</html>
